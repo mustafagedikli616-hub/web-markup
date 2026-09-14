@@ -6,3 +6,19 @@ body {
 .class {
     font-weight: bold;
 }
+
+p {
+border-width: 10px;
+border-color: black;
+border-style: double;
+}
+
+#h2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border: 1px solid #999;
+}
