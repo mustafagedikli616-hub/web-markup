@@ -14,7 +14,7 @@ border-style: double;
 }
 
 #h2 {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     right: 0;
     width: 30px;
