@@ -13,7 +13,7 @@ border-color: black;
 border-style: double;
 }
 
-#h2 {
+.special2 {
     position: sticky;
     bottom: 0;
     right: 0;
