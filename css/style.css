@@ -54,6 +54,27 @@ article a {
 		justify-content: space-between;
 		align-items: center;
 	}
+	header , section , footer {
+		padding-left : 5rem;
+		padding-right: 5rem;
+	}
+}
+
+.hero h1::before {
+	content: "";
+	display: block;
+	width: 3.5rem;
+	height: 0.4rem;
+	background-color: #f26b21;
+	border-radius: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.hero {
+	background-color: #1f2328;
+	color: #f8f7f4;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 .logo {
