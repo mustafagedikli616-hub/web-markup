@@ -31,7 +31,7 @@ article {
 	background-color: #ffffff;
 	padding: 1.5rem;
 	border-radius: 0.5rem;
-	margin-bottom: 1rem;
+	margin-bottom: 5rem;
 
 
 }
@@ -112,6 +112,21 @@ footer a {
 	color: #f8f7f4;
 }
 
+.active {
+	border-width: medium;
+	border-style: outset;
+	border-color: #f26b21;
+	background-color: transparent;
+	border-radius: 0.5rem;
+	padding: 0.40em;
+}
+
+nav ul :hover {
+	color: #f26b21;
+	text-decoration: underline;
+}
+
+
 @media (min-width: 768px) {
 	header {
 		display:flex;
@@ -124,7 +139,6 @@ footer a {
 	}
 	.cards {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
 		gap: 1rem;
 		grid-template-columns:  1fr;
 	}
