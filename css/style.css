@@ -32,8 +32,8 @@ article {
 	padding: 1.5rem;
 	border-radius: 0.5rem;
 	margin-bottom: 1rem;
-	display: flex;
-	gap: 2rem;
+
+
 }
 
 article a {
@@ -41,9 +41,7 @@ article a {
 	font-weight: 700;
 }
 
-.nutrition {
-	flex-direction:row-reverse;
-}
+
 
 
 
@@ -135,5 +133,12 @@ footer a {
 	header , section , footer {
 		padding-left : 5rem;
 		padding-right: 5rem;
+	}
+	.nutrition {
+		flex-direction:row-reverse;
+	}
+	article {
+		display: flex;
+		gap: 2rem;
 	}
 }
