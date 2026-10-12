@@ -65,12 +65,17 @@ margin-right: auto;
 	margin-left: auto;
 }
 
+
 .hero {
 	background-color: #1f2328;
 	color: #f8f7f4;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 	text-align: center;
+	background-image: linear-gradient(rgba(31,35,40,0),rgba(31,35,40,1)),url("../img/barbell.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .logo {
@@ -89,6 +94,7 @@ nav ul {
 nav a {
 	color: #f8f7f4;
 	text-decoration: none;
+
 }
 
 .start-button {
@@ -97,7 +103,8 @@ nav a {
 	text-decoration: none;
     padding: 0.75rem 1.5rem;
     display: inline-block;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem
+	
 }
 
 h1,
