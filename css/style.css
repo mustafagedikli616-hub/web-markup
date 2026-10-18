@@ -141,7 +141,15 @@ nav a {
 	
 
 }
-
+.submit-button {
+	background-color: #f26b21;
+	color: #1f2328;
+	text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	display: inline-block;
+	border-radius: 0.5rem;
+	align-self: flex-start;
+}
 h1,
 h2,
 h3 {
@@ -201,8 +209,29 @@ footer a:hover {
 
 .next-button {
 	display:flex;
-	justify-content: center;
+	justify-content: space-between;
 }
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+input ,
+select, 
+textarea {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	border:solid #1f2328;
+}
+
+.social > article,
+.what-i-do > article {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+
 
 
 @media (min-width: 768px) {
@@ -240,4 +269,29 @@ footer a:hover {
 		display: flex;
 		flex-wrap: wrap;
 	}
+	.diet-plans {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1rem;
+		
+		
+	}
+	.diet-plans > p {
+		grid-column: 1/-1;
+	}
+	.diet-plans > article {
+		display: flex;
+		flex-direction: column;
+	}
+	.diet-plans > article > img {
+		width: 100%;
+		height: 12rem;
+		object-fit: cover;
+	}
+	.contact {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+	
 }
+
