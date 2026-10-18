@@ -79,12 +79,12 @@ margin-right: auto;
 	background-position: center;
 }
 
-.hero-wheretobegin {
+.hero-detailpages {
 	background-color: #1f2328;
 	color: #f8f7f4;
 }
 
-.article-wheretobegin {
+.article-detailpages {
 	background-color: #1f2328;
 }
 .hero-img {
@@ -129,6 +129,17 @@ nav a {
     display: inline-block;
     border-radius: 0.5rem
 	
+}
+
+.start-button2 {
+	background-color: #f26b21;
+	color: #1f2328;
+	text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	display: inline-block;
+	border-radius: 0.5rem;
+	
+
 }
 
 h1,
@@ -178,6 +189,19 @@ footer a:hover {
 .start-button:active {
 	background-color:#c2410c;
 	color: #ffffff;
+}
+.start-button2:hover {
+	background-color: #ffffff;
+}
+
+.start-button2:active {
+	background-color:#c2410c;
+	color: #ffffff;
+}
+
+.next-button {
+	display:flex;
+	justify-content: center;
 }
 
 
