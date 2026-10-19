@@ -127,10 +127,25 @@ nav a {
 	text-decoration: none;
     padding: 0.75rem 1.5rem;
     display: inline-block;
+	text-align: center;
     border-radius: 0.5rem
 	
 }
 
+.training-button {
+	background-color: #f26b21;
+	color: #1f2328;
+	text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	display:inline-block;
+	border-radius: 0.5rem;
+}
+
+.training-article {
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
 .start-button2 {
 	background-color: #f26b21;
 	color: #1f2328;
@@ -138,7 +153,7 @@ nav a {
 	padding: 0.75rem 1.5rem;
 	display: inline-block;
 	border-radius: 0.5rem;
-	
+
 
 }
 .submit-button {
