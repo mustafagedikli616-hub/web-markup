@@ -11,8 +11,12 @@ body {
 
 header {
     background-color: #1f2328;
-    padding: 1rem;
-	text-align: center;
+    padding: 1.25rem;
+display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	
 }
 section {
 	padding: 1.5rem;
@@ -102,7 +106,7 @@ nav ul {
 	list-style: none;
 	padding: 0;
 	display:grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
     gap: 0.5rem;
 	text-align: center;
 
@@ -120,6 +124,46 @@ nav a {
 	display: block;
 font-weight: 500;
 	transition: background-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+nav {
+	max-height:0;
+	overflow: hidden;
+	opacity:0;
+	transition: background-color 0.3s ease-out, color 0.3s ease-out;
+
+}
+
+.menu-toggle:checked ~ nav
+{
+	max-height:25rem;
+	opacity: 1;
+}
+.menu-toggle {
+	display: none;
+}
+
+.menu-button {
+	width: 2.75rem;
+	height: 2.75rem;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #f26b21;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.3rem;
+	cursor: pointer;
+}
+
+.menu-button span {
+	display: block;
+	width: 1.3rem;
+	height: 3px;
+	background-color: #f26b21;
+	border-radius: 2px;
 }
 
 .start-button {
@@ -286,11 +330,21 @@ textarea {
 		display: flex;
 		gap: 2rem;
 	}
+    nav { 
+		max-height:none;
+		overflow: visible;
+		opacity:1;
+		
+	   }	
 	nav ul {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem;
 		margin: 0;
+	}
+	
+	.menu-button {
+		display:none;
 	}
 	.logo {
 		height: 3.5rem;
