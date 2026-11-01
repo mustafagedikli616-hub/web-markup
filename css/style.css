@@ -119,6 +119,7 @@ nav a {
 	padding: 0.5rem 1rem;
 	display: block;
 font-weight: 500;
+	transition: background-color 0.15s ease-out, color 0.15s ease-out;
 }
 
 .start-button {
@@ -188,13 +189,17 @@ footer a {
 
 .active {
 	background-color: #f26b21;
-	padding: 0.40em;
 	color: #1f2328;
 }
 
-nav ul :hover {
-	color: #f26b21;
-	text-decoration: underline;
+nav a:hover {
+	color: #f8f7f4;
+	text-decoration: none;
+	background-color: #f26b21;
+}
+
+nav a.active:hover {
+	color: #1f2328;
 }
 
 footer a:hover {
@@ -266,9 +271,13 @@ textarea {
 		justify-content: space-between;
 		align-items: center;
 	}
-	header , section , footer {
-		padding-left : 5rem;
-		padding-right: 5rem;
+ section{
+	 padding-left : 5rem;
+	 padding-right : 5rem;
+ }
+	header , footer {
+		padding-left : 7.5rem;
+		padding-right: 7.5rem;
 	}
 	.nutrition {
 		flex-direction:row-reverse;
@@ -280,6 +289,11 @@ textarea {
 	nav ul {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 1rem;
+		margin: 0;
+	}
+	.logo {
+		height: 3.5rem;
 	}
 	.diet-plans {
 		display: grid;
