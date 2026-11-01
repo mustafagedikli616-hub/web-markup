@@ -109,16 +109,16 @@ nav ul {
 }
 
 nav a {
-	color: #f8f7f4;
+	color: #f26b21;
 	text-decoration: none;
-	border-width: medium;
-	border-style: outset;
+	border-width: 3px;
+	border-style: solid;
 	border-color: #f26b21;
 	background-color: transparent;
 	border-radius: 0.5rem;
-	padding: 0.40em;
+	padding: 0.5rem 1rem;
 	display: block;
-
+font-weight: 500;
 }
 
 .start-button {
@@ -172,12 +172,9 @@ footer a {
 }
 
 .active {
-	border-width: medium;
-	border-style: outset;
-	border-color: #f26b21;
 	background-color: #f26b21;
-	border-radius: 0.5rem;
 	padding: 0.40em;
+	color: #1f2328;
 }
 
 nav ul :hover {
