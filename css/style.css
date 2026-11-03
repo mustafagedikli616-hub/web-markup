@@ -121,6 +121,12 @@ margin-right: auto;
 	text-decoration: underline;
 }
 
+.footer-bottom p {
+	color: #f8f7f4;
+	font-size: 0.8rem;
+	margin:0;
+}
+
 
 
 
