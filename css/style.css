@@ -112,7 +112,11 @@ margin-right: auto;
 	border-top: 1px solid #5C6370;
 	padding-top: 0.75rem;
 	margin-top: 0.75rem;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
+
 
 .footer-bottom a {
 	color: #f26b21;
@@ -414,6 +418,10 @@ textarea {
 		align-items: center;
 		margin-top: 2.5rem;
 		padding-top:2.5rem;
+		padding-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
 	}
 	.nutrition {
 		flex-direction:row-reverse;
