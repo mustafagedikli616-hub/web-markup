@@ -83,6 +83,43 @@ margin-right: auto;
 	background-position: center;
 }
 
+.day-picker {
+	text-align: center;
+}
+
+.day-picker ul {
+	display: flex;
+	justify-content: center;
+	gap:1rem;
+	flex-wrap:wrap;
+	list-style:none;
+	padding: 0;
+	margin: 0;
+}
+.day-picker a {
+	color:#C2410C;
+	text-decoration: none;
+	font-weight: 500;
+	border-width:3px;
+	border-style:solid;
+	border-color:#f26b21;
+	border-radius: 0.5rem;
+	padding: 0.5rem 2rem;
+	display:block;
+}
+
+.day-picker a:hover {
+	background-color: #f26b21;
+	color: #f8f7f4;
+	transition: background-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+.day-picker a:active {
+	background-color:#c2410c;
+	color: #ffffff;
+}
+
+
 .footer-links {
 	list-style: none;
 	padding: 0;
@@ -422,7 +459,7 @@ textarea {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	}
+	
 	.nutrition {
 		flex-direction:row-reverse;
 	}
