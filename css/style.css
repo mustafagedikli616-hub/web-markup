@@ -83,7 +83,7 @@ margin-right: auto;
 	background-position: center;
 }
 
-.day-picker {
+.day-picker, .faq-picker {
 	text-align: center;
 }
 
@@ -96,7 +96,17 @@ margin-right: auto;
 	padding: 0;
 	margin: 0;
 }
-.day-picker a {
+
+.faq-picker ul {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	
+}
+.day-picker a, .faq-picker a{
 	color:#C2410C;
 	text-decoration: none;
 	font-weight: 500;
@@ -109,15 +119,44 @@ margin-right: auto;
 	transition: background-color 0.15s ease-out, color 0.15s ease-out;
 }
 
-.day-picker a:hover {
+.day-picker a:hover, .faq-picker a:hover {
 	background-color: #f26b21;
 	color: #1f2328;
 	
 }
 
-.day-picker a:active {
+.day-picker a:active, .faq-picker a:active {
 	background-color:#c2410c;
 	color: #ffffff;
+}
+
+.faq-selection {
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	border-color: #5C6370;
+	border-width:3px;
+	border-style: solid;
+	margin-bottom:0.5rem;
+	gap: 1rem;
+	padding:1rem;
+}
+
+.faq-selection summary {
+	cursor:pointer;
+	font-weight: 600;
+	list-style:none;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.faq-selection summary::-webkit-details-marker  {
+	display:none;
+}
+
+.faq-selection p {
+	margin-top: 0.5rem;
 }
 
 .exercise-grid {
