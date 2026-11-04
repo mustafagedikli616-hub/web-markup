@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap");
+
+
 body {
 	font-family: "DM Sans", sans-serif;
 	color: #1f2328;
@@ -39,6 +41,12 @@ article {
 	margin-bottom: 5rem;
 
 
+}
+.cards > article > img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
 }
 
 article a {
@@ -134,10 +142,9 @@ margin-right: auto;
 	background-color: #ffffff;
 	border-radius: 0.5rem;
 	border-color: #5C6370;
-	border-width:3px;
+	border-width:1px;
 	border-style: solid;
 	margin-bottom:0.5rem;
-	gap: 1rem;
 	padding:1rem;
 }
 
@@ -151,12 +158,42 @@ margin-right: auto;
 	
 }
 
+.faq-selection summary::after {
+	content: "↓";
+	color: #1F2328;
+	font-weight: 500;
+	transition:  transform 0.15s ease-out;
+}
+
+.faq-selection[open] summary::after {
+	transform:rotate(180deg);
+}
+
+@keyframes faqdown {
+	from { opacity: 0; transform: translateY(-0.5rem); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.faq-selection[open] p {
+	animation: faqdown .3s ease-out;
+}
+
+.faq-selection::details-content {
+	height:0;
+	overflow:clip;
+	transition: height 0.15s ease-out, content-visibility 0.15s ease-out;
+}
+
 .faq-selection summary::-webkit-details-marker  {
 	display:none;
 }
 
 .faq-selection p {
 	margin-top: 0.5rem;
+}
+
+.faq-selection[open]::details-content {
+	height:auto;
 }
 
 .exercise-grid {
@@ -166,6 +203,10 @@ margin-right: auto;
 	display:grid;
 	gap:1rem;
 	grid-template-columns: 1fr 1fr;
+}
+
+.faq-cta {
+	text-align:center;
 }
 
 .exercise-grid img {
@@ -507,6 +548,14 @@ textarea {
 		display: grid;
 		gap: 1rem;
 		grid-template-columns:  1fr;
+	}
+	.cards > article > img {
+		width: 40%;
+		flex: 0 0 40%;
+	}
+	
+	.cards > article {
+	align-items:center;
 	}
 	footer {
 		display: flex;
