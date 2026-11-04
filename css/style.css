@@ -129,6 +129,19 @@ margin-right: auto;
 	grid-template-columns: 1fr 1fr;
 }
 
+.exercise-grid img {
+	width: 100%;
+	height: 7rem;
+	object-fit: cover;
+	display: block;
+	border-radius: 0.5rem;
+}
+
+.exercise-grid h3 , .exercise-grid h4 { 
+	font-size: 1rem;
+	
+}
+
 .exercise-grid > li > figure {
 	margin: 0;
 }
@@ -137,8 +150,17 @@ margin-right: auto;
 	background-color: #ffffff;
 	padding:1rem;
 	border-radius: 0.5rem;
-	
 }
+.exercise-grid p {
+	font-size: 0.75rem;
+	color: #5C6370;
+	margin: 0;
+}
+
+
+
+
+
 
 
 .footer-links {
@@ -404,7 +426,9 @@ footer a:hover {
 
 .next-button {
 	display:flex;
-	justify-content: space-between;
+	justify-content: center;
+	gap:1rem;
+	
 }
 form {
 	display: flex;
@@ -484,6 +508,10 @@ textarea {
 	.exercise-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	#upper-lower .exercise-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 	
 	.nutrition {
