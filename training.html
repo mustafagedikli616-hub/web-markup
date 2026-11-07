@@ -1,210 +1,224 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<title>Forgefit</title>
-	<link rel="icon" type="image/png" href="img/favicon.png" />
-	<meta
-			name="description"
-			content="This section will tell you example training plans that you can implement."
-	/>
-	<meta name="author" content="Mustafa Gedikli" />
-	<meta
-			name="keywords"
-			content="nutrition, training, where to begin, fitness, contact"
-	/>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<title>Training | ForgeFit</title>
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+	<meta name="description" content="Find an easy workout plan that fits your week: a home workout, an upper/lower split or full body for 2 to 5 days a week."/>
+	<meta name="author" content="Mustafa Gedikli"/>
+	<meta name="keywords" content="training, workout plans, home workout, upper lower split, full body"/>
 </head>
 <body>
-<header id="top">
-	<a href="index.html"
-	><img src="img/logo.svg" alt="Logo" class="logo"
-	/></a>
-	<input type="checkbox" id="menu-toggle" class="menu-toggle" />
-	<label for="menu-toggle" class="menu-button" title="Open menu">
-		<img src="img/menu.svg" alt="Menu" class="menu-icon" title="OPen menu">
-		<img src="img/close.svg" alt="close" class="close-icon" title="Close menu">
-	</label>
-	<nav>
+	<header id="top">
+		<a href="index.html"><img class="logo" src="img/logo.svg" alt="ForgeFit logo" title="ForgeFit logo"/></a>
+		<input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+		<label for="menu-toggle" class="menu-button" title="Open menu">
+			<img class="menu-icon" src="img/menu.svg" alt="Menu" title="Open menu"/>
+			<img class="close-icon" src="img/close.svg" alt="Close" title="Close menu"/>
+		</label>
+		<nav>
+			<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="where-to-begin.html">Where to begin</a></li>
+					<li><a href="nutrition.html">Nutrition</a></li>
+					<li><a class="active" href="training.html">Training</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="hero-detailpages">
+		<article class="article-detailpages">
+			<img class="hero-img" src="img/training-hero.jpg" alt="Gym floor with green turf, white pillars, a red box and training equipment." title="A gym with some equipment"/>
+			<section>
+				<h1>Confused on training?</h1>
+				<p>This page gives you easy workout plans you can follow.</p>
+			</section>
+		</article>
+	</section>
+	<section class="day-picker">
+		<h2>How many days can you train?</h2>
+		<p>Pick a number to jump to the program.</p>
 		<ul>
+			<li><a href="#full-body">2 days</a></li>
+			<li><a href="#full-body">3 days</a></li>
+			<li><a href="#upper-lower">4 days</a></li>
+			<li><a href="#home-workout">5 days</a></li>
+		</ul>
+	</section>
+	<section id="home-workout">
+		<h2>Home workout (5 days, no gym)</h2>
+		<p>For who: people who train at home with little or no equipment.</p>
+		<ul class="exercise-grid">
+			<li>
+				<figure>
+					<img src="img/home-push-ups.jpg" alt="Man in black doing a push-up on the floor." title="Push-ups that train your chest."/>
+					<figcaption>
+						<h3>Push-ups</h3>
+						<p>3 sets x 12 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="img/home-squats.jpg" alt="Woman doing a squat in a living room next to a sofa." title="Bodyweight squats for legs and glutes."/>
+					<figcaption>
+						<h3>Squats</h3>
+						<p>3 sets x 15 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="img/home-plank.jpg" alt="Woman holding a plank on a yoga mat." title="Plank that helps strengthen your core"/>
+					<figcaption>
+						<h3>Plank</h3>
+						<p>3 sets x 40 sec</p>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="img/home-lunges.jpg" alt="Woman in black stepping forward into a lunge." title="Lunges are a leg exercise."/>
+					<figcaption>
+						<h3>Lunges</h3>
+						<p>3 sets x 10 per leg</p>
+					</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</section>
+	<section id="upper-lower">
+		<h2>Upper / Lower (4 days)</h2>
+		<p>For who: people with gym access who want more volume.</p>
+		<h3>Upper</h3>
+		<ul class="exercise-grid">
+			<li>
+				<figure>
+					<img src="img/gym-bench-press.jpg" alt="Person lying on a bench pressing a barbell in a gym" title="Bench press for the chest."/>
+					<figcaption>
+						<h4>Bench press</h4>
+						<p>4 sets x 8 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="img/gym-barbell-row.jpg" alt="Person bent over doing a barbell row." title="Barbell row for a stronger back."/>
+					<figcaption>
+						<h4>Barbell row</h4>
+						<p>4 sets x 8 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="img/gym-overhead-press.jpg" alt="Man pressing dumbbells above his head." title="Overhead press for shoulders."/>
+					<figcaption>
+						<h4>Overhead press</h4>
+						<p>3 sets x 10 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+		</ul>
+		<h3>Lower</h3>
+		<ul class="exercise-grid">
+			<li>
+				<figure>
+					<img src="img/gym-squat.jpg" alt="Person squatting with a barbell in a squat rack." title="Barbell squat for legs."/>
+					<figcaption>
+						<h4>Squat</h4>
+						<p>4 sets x 8 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="img/gym-romanian-deadlift.jpg" alt="Woman lowering a barbell down her legs with her back straight." title="Romanian deadlift for hamstrings and glutes."/>
+					<figcaption>
+						<h4>Romanian deadlift</h4>
+						<p>3 sets x 10 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="img/gym-leg-press.jpg" alt="Person pushing a weighted sled on a leg press machine." title="Leg press for quads and glutes."/>
+					<figcaption>
+						<h4>Leg press</h4>
+						<p>3 sets x 12 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</section>
+	<section id="full-body">
+		<h2>Full body (2-3 days)</h2>
+		<p>For who: beginners or people with a busy week.</p>
+		<ul class="exercise-grid">
+			<li>
+				<figure>
+					<img src="img/program-squat.jpg" alt="Woman doing a barbell squat" title="Barbell squat for legs."/>
+					<figcaption>
+						<h3>Squat</h3>
+						<p>3 sets x 8 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="img/program-bench-press.jpg" alt="Person doing a bench press on a machine" title="Bench press for the chest."/>
+					<figcaption>
+						<h3>Bench press</h3>
+						<p>3 sets x 8 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="img/program-row.jpg" alt="Person bent over rowing a barbell." title="Rows work your back"/>
+					<figcaption>
+						<h3>Row</h3>
+						<p>3 sets x 10 reps</p>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="img/program-plank.jpg" alt="Man holding a plank on a yoga mat" title="Plank that helps strengthen your core"/>
+					<figcaption>
+						<h3>Plank</h3>
+						<p>3 sets x 40 sec</p>
+					</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</section>
+	<section class="next-button">
+		<a class="start-button2" href="nutrition.html">&larr; Nutrition</a>
+		<a class="start-button2" href="faq.html">FAQ &rarr;</a>
+	</section>
+	<footer>
+		<ul class="footer-links">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="where-to-begin.html">Where to begin</a></li>
 			<li><a href="nutrition.html">Nutrition</a></li>
-			<li><a class="active" href="training.html">Training</a></li>
+			<li><a class="current-footer" href="training.html">Training</a></li>
 			<li><a href="faq.html">FAQ</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
-	</nav>
-</header>
-<section class="hero-detailpages">
-	<article class="article-detailpages">
-		<img src="img/messi.jpeg" alt="Nutrition" class="hero-img"  />
-		<section>
-			<h1>Confused on training? This page will give you an example training day.</h1>
-			<p>
-				This page will explain training and an example day
-			</p>
+		<section class="footer-bottom">
+			<p>&copy; 2026 Mustafa Gedikli. All rights reserved.</p>
+			<a href="#top">Back to top &uarr;</a>
 		</section>
-	</article>
-</section>
-<section class="day-picker">
-	<h2>Question?</h2>
-	<p>Answer</p>
-	<ul>
-		<li><a href="#full-body">2</a></li>
-		<li><a href="#full-body">3</a></li>
-		<li><a href="#upper-lower">4</a></li>
-		<li><a href="#home-workout">5</a></li>
-	</ul>
-</section>
-<section id="home-workout">
-	<h2> Home workouts (5 days,no gym)</h2>
-	<p>for who?</p>
-	<ul class="exercise-grid">
-	<li>
-		<figure>
-			<img src="img/messi.jpeg" alt="gym" class="gym" />
-			<figcaption><h3>Push-ups</h3>
-			<p>3 sets x 12 reps</p></figcaption>
-		</figure>
-	</li>
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h4>Push-ups</h4>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h3>Push-ups</h3>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h3>Push-ups</h3>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-	</ul>
-	
-	
-</section>
-<section id="upper-lower">
-	<h2> Upper / Lower (4 days)</h2>
-	<p>for who?</p>
-	<h3>Upper</h3>
-	<ul class="exercise-grid">
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h4>Push-ups</h4>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h4>Push-ups</h4>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h4>Push-ups</h4>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-	</ul>
-	<h3>Lower</h3>
-	<ul class="exercise-grid">
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h4>Push-ups</h4>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h4>Push-ups</h4>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h4>Push-ups</h4>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-	</ul>
-</section>
-<section id="full-body">
-	<h2> Full body (2-3 days)</h2>
-	<p>for who?</p>
-	<ul class="exercise-grid">
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h3>Push-ups</h3>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h3>Push-ups</h3>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h3>Push-ups</h3>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-		<li>
-			<figure>
-				<img src="img/messi.jpeg" alt="gym" class="gym" />
-				<figcaption><h3>Push-ups</h3>
-					<p>3 sets x 12 reps</p></figcaption>
-			</figure>
-		</li>
-	</ul>
-</section>
-
-<section class="next-button">
-	<a class="start-button2" href="where-to-begin.html">&larr; Where to begin </a>
-	<a class="start-button2" href="training.html">Training &rarr;</a>
-
-</section>
-<footer>
-	<ul class="footer-links">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="where-to-begin.html">Where to begin</a></li>
-		<li><a href="nutrition.html">Nutrition</a></li>
-		<li><a class="current-footer" href="training.html">Training</a></li>
-		<li><a href="faq.html">FAQ</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
-	<section class="footer-bottom">
-		<p>&copy; 2026 Mustafa Gedikli. All rights reserved.</p>
-		<a href="#top">Back to top &uarr;</a>
-	</section>
-</footer>
-<input type="checkbox" id="cookie-toggle" class="cookie-toggle"/>
-<aside class="cookie-content">
-	<h2>Cookies</h2>
-	<p>We need <em>cookies</em> for this site to function.</p>
-	<label class="accept-button" for="cookie-toggle">Accept</label>
-</aside>
+	</footer>
+	<input type="checkbox" id="cookie-toggle" class="cookie-toggle"/>
+	<aside class="cookie-content">
+		<h2>Cookies</h2>
+		<p>We need <em>cookies</em> for this site to function.</p>
+		<label class="accept-button" for="cookie-toggle">Accept</label>
+	</aside>
 </body>
 </html>
