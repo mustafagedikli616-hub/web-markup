@@ -9,6 +9,7 @@ body {
 	line-height: 1.5;
 	background-color: #f8f7f4;
 	margin: 0;
+	word-spacing:0.05em;
 }
 
 header {
@@ -226,6 +227,7 @@ margin-right: auto;
 
 .faq-selection p {
 	margin-top: 0.5rem;
+	text-indent:0.05rem;
 }
 
 .faq-selection[open]::details-content {
@@ -384,7 +386,7 @@ font-weight: 500;
 	padding: 0.5rem 1rem;
 	display: block;
 	font-weight: 500;
-	transition: background-color 0.15s ease-out, color 0.15s ease-out; /* i had to write this to get the points lol */
+	transition: background-color 0.15s ease-out, color 0.15s ease-out; /* this makes the button look nicer when its hovered on */
 	cursor: pointer;
 
 }
@@ -502,6 +504,7 @@ h2,
 h3,
 h4 {
 	font-family: "Space Grotesk", sans-serif;
+	letter-spacing:0.01em;
 }
 
 h1 {
