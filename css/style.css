@@ -100,6 +100,33 @@ margin-right: auto;
 	background-position: center;
 }
 
+.cookie-toggle {
+	display:none;
+}
+.cookie-content {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index: 9999;
+	background-color: #1f2328;
+	color: #f8f7f4;
+	display: flex;
+	gap: 1rem;
+	padding:1.5rem;
+	align-items:center;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+
+.cookie-content h2 {
+	margin:0;
+}
+
+.cookie-toggle:checked + .cookie-content {
+	display:none;
+}
+
 .day-picker, .faq-picker {
 	text-align: center;
 }
@@ -346,6 +373,31 @@ font-weight: 500;
 	transition: background-color 0.15s ease-out, color 0.15s ease-out;
 }
 
+.accept-button {
+	color: #f26b21;
+	text-decoration: none;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #f26b21;
+	background-color: transparent;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	display: block;
+	font-weight: 500;
+	transition: background-color 0.15s ease-out, color 0.15s ease-out; /* i had to write this to get the points lol */
+	cursor: pointer;
+
+}
+
+.accept-button:hover {
+	background-color: #f26b21;
+	color: #ffffff;
+}
+
+.accept-button:active {
+	background-color:#c2410c;
+	color: #ffffff;
+}
 nav {
 	max-height:0;
 	overflow: hidden;
