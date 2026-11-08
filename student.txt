@@ -1,0 +1,7 @@
+Name: Mustafa Gedikli
+Class: IT1B
+Student number: 761839
+Course: Web Markup
+Project: ForgeFit
+GitHub repository: https://github.com/mustafagedikli616-hub/web-markup
+GitHub Pages URL: https://mustafagedikli616-hub.github.io/web-markup/
