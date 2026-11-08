@@ -1,129 +1,149 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<title>Contact me(placeholder)</title>
-	<link rel="icon" type="image/png" href="img/favicon.png" />
-	<meta
-			name="description"
-			content="This section will have contact info if you want to know more about me."
-	/>
-	<meta name="author" content="Mustafa Gedikli" />
-	<meta
-			name="keywords"
-			content="nutrition, training, where to begin, fitness, contact"
-	/>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<title>Contact | ForgeFit</title>
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+	<meta name="description" content="Contact ForgeFit with your question about training or nutrition and get a personal answer by e-mail within 2 working days."/>
+	<meta name="author" content="Mustafa Gedikli"/>
+	<meta name="keywords" content="contact, question, training, nutrition, ForgeFit"/>
 </head>
 <body>
-<header id="top">
-	<a href="index.html"
-	><img src="img/logo.svg" alt="Logo" class="logo"
-	/></a>
-	<input type="checkbox" id="menu-toggle" class="menu-toggle" />
-	<label for="menu-toggle" class="menu-button" title="Open menu">
-		<img src="img/menu.svg" alt="Menu" class="menu-icon" title="OPen menu">
-		<img src="img/close.svg" alt="close" class="close-icon" title="Close menu">
-	</label>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="where-to-begin.html">Where to begin</a></li>
-			<li><a  href="nutrition.html">Nutrition</a></li>
-			<li><a href="training.html">Training</a></li>
-			<li><a href="faq.html">FAQ</a></li>
-			<li><a class="active" href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-</header>
-<section class="hero-detailpages">
-	<article class="article-detailpages">
-		<img src="img/messi.jpeg" alt="Contact Me" class="hero-img"  />
+	<header id="top">
+		<a href="index.html"><img class="logo" src="img/logo.svg" alt="ForgeFit logo" title="ForgeFit logo"/></a>
+		<input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+		<label for="menu-toggle" class="menu-button" title="Open menu">
+			<img class="menu-icon" src="img/menu.svg" alt="Menu" title="Open menu"/>
+			<img class="close-icon" src="img/close.svg" alt="Close" title="Close menu"/>
+		</label>
+		<nav>
+			<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="where-to-begin.html">Where to begin</a></li>
+					<li><a href="nutrition.html">Nutrition</a></li>
+					<li><a href="training.html">Training</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a class="active" href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="hero-detailpages">
+		<article class="article-detailpages">
+			<img class="hero-img" src="img/contact-hero.jpg" alt="Just empty gym equipment for the upper body." title="A gym with gym equipment"/>
+			<section>
+				<h1>Contact</h1>
+				<p>Ask me anything about training or nutrition.</p>
+			</section>
+		</article>
+	</section>
+	<main class="contact">
 		<section>
-			<h1>Do you want more information? Contact me.</h1>
-			<p>
-				Contact me.
-			</p>
+			<form>
+				<p class="required-note">* = required</p>
+				<p class="error-banner">Please correct the fields below.</p>
+				<fieldset>
+					<legend>Title *</legend>
+					<input type="radio" id="mr" name="title" value="Mr" required/>
+					<label for="mr">Mr</label>
+					<input type="radio" id="mrs" name="title" value="Mrs" required/>
+					<label for="mrs">Mrs</label>
+					<span class="error">Please select your title.</span>
+				</fieldset>
+				<p class="field half">
+					<label for="fname">First name *</label>
+					<input type="text" id="fname" name="firstname" placeholder="John" required pattern="[A-Za-z\u00C0-\u00FF' \-]+"/>
+					<span class="error">The entered name is incorrect. Please make sure there are no special characters.</span>
+				</p>
+				<p class="field half">
+					<label for="lname">Surname *</label>
+					<input type="text" id="lname" name="surname" placeholder="Doe" required pattern="[A-Za-z\u00C0-\u00FF' \-]+"/>
+					<span class="error">The entered surname is incorrect. Please make sure there are no special characters.</span>
+				</p>
+				<p class="field">
+					<label for="email">E-mail *</label>
+					<input type="email" id="email" name="email" placeholder="johndoe@email.com" required pattern="[^@\s]+@[^@\s]+\.[A-Za-z]{2,}"/>
+					<span class="error">The entered e-mail is incorrect. Please make sure your e-mail is correct, like johndoe@email.com</span>
+				</p>
+				<p class="field">
+					<label for="phoneno">Phone number *</label>
+					<input type="tel" id="phoneno" name="phoneno" placeholder="0123456789" required pattern="[0-9]{10}"/>
+					<span class="error">The entered phone number is incorrect. Please make sure the number is 10 numbers long.</span>
+				</p>
+				<p class="field">
+					<label for="topic">Topic *</label>
+					<select id="topic" name="topic" required>
+						<option value="">Pick a topic</option>
+						<option>Where to begin</option>
+						<option>Nutrition</option>
+						<option>Training</option>
+						<option>Other</option>
+					</select>
+					<span class="error">Please pick a topic.</span>
+				</p>
+				<p class="field">
+					<label for="question">Question *</label>
+					<textarea id="question" name="question" rows="4" placeholder="Enter your question" required minlength="20"></textarea>
+					<span class="error">Please ask a question longer than 3 words.</span>
+				</p>
+				<input type="submit" value="Send" class="submit-button"/>
+			</form>
 		</section>
-	</article>
-	</section>
-<main class="contact">
-	<section>
-		<form>
-			<p>
-				* = Required.
-			</p>
-			<fieldset>
-			<legend>Title *</legend>
-				<input type="radio" id="mr" name="title"/>
-				<label for="mr">Mr</label>
-				<input type="radio" id="mrs" name="title"/>
-				<label for="mrs">Mrs</label>
-			</fieldset>
-			<label for="fname">First name *</label>
-				<input type="text" id="fname" name="firstname" placeholder="John"/>
-			<label for="mname">Middle name</label>
-			<input type="text" id="mname" name="middlename"/>
-			<label for="lname">Surname *</label>
-			<input type="text" id="lname" name="surname" placeholder="Doe"/>
-			<label for="email">Email *</label>
-			<input type="email" id="email" name="email" placeholder="johndoe@email.com"/>
-			<label for="phoneno">Phone number *</label>
-			<input type="tel" id="phoneno" name="phoneno" placeholder="0123456789"/>
-			<label for="topic">Topic *</label>
-			<select id="topic" name="Topic"> <option>Pick here</option><option>Where to begin</option> <option>Nutrition</option><option>Training</option> <option>Other</option></select>
-			<label for="question">Question *</label>
-			<textarea id="question" name="question" rows="4" cols="50" placeholder="Enter your question"></textarea>
-			<input type="submit" value="Submit" class="submit-button" />   
-			
-		</form>
-	</section>
-<section class="social">
-	<h2>Follow me</h2>
-	<article>
-		<h3>Instagram</h3>
-		<p>@mustafa_gdkl61</p>
-	</article>
-	<article>
-		<h3>Facebook</h3>
-		<p>Mustafa Gedikli</p>
-	</article>
-	<article>
-		<h3>Tiktok</h3>
-		<p>@mustafagedikli61</p>
-	</article>
-	</section>
-</main>
+		<section class="social">
+			<h2>Follow me</h2>
+			<article>
+				<img class="social-icon" src="img/instagram.svg" alt="Instagram logo" title="Instagram"/>
+				<section>
+					<h3>Instagram</h3>
+					<p>@mustafa_gdkl61</p>
+				</section>
+			</article>
+			<article>
+				<img class="social-icon" src="img/facebook.svg" alt="Facebook logo" title="Facebook"/>
+				<section>
+					<h3>Facebook</h3>
+					<p>Mustafa Gedikli</p>
+				</section>
+			</article>
+			<article>
+				<img class="social-icon" src="img/tiktok.svg" alt="TikTok logo" title="TikTok"/>
+				<section>
+					<h3>TikTok</h3>
+					<p>@mustafagedikli61</p>
+				</section>
+			</article>
+		</section>
+	</main>
 	<section class="what-i-do">
 		<article>
 			<h3>What will we do with this information?</h3>
-			<p>I will read your question and i will personally answer this e-mail.</p>
+			<p>I will read your question and personally answer it by e-mail.</p>
 		</article>
 		<article>
 			<h3>When should you expect a reply?</h3>
-			<p>Reply is expected within 2 business days</p>
+			<p>A reply is expected within 2 working days.</p>
 		</article>
 	</section>
-<footer>
-	<ul class="footer-links">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="where-to-begin.html">Where to begin</a></li>
-		<li><a href="nutrition.html">Nutrition</a></li>
-		<li><a href="training.html">Training</a></li>
-		<li><a href="faq.html">FAQ</a></li>
-		<li><a class="current-footer" href="contact.html">Contact</a></li>
-	</ul>
-	<section class="footer-bottom">
-		<p>&copy; 2026 Mustafa Gedikli. All rights reserved.</p>
-		<a href="#top">Back to top &uarr;</a>
-	</section>
-</footer>
-<input type="checkbox" id="cookie-toggle" class="cookie-toggle"/>
-<aside class="cookie-content">
-	<h2>Cookies</h2>
-	<p>We need <em>cookies</em> for this site to function.</p>
-	<label class="accept-button" for="cookie-toggle">Accept</label>
-</aside>
+	<footer>
+		<ul class="footer-links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="where-to-begin.html">Where to begin</a></li>
+			<li><a href="nutrition.html">Nutrition</a></li>
+			<li><a href="training.html">Training</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a class="current-footer" href="contact.html">Contact</a></li>
+		</ul>
+		<section class="footer-bottom">
+			<p>&copy; 2026 Mustafa Gedikli. All rights reserved.</p>
+			<a href="#top">Back to top &uarr;</a>
+		</section>
+	</footer>
+	<input type="checkbox" id="cookie-toggle" class="cookie-toggle"/>
+	<aside class="cookie-content">
+		<h2>Cookies</h2>
+		<p>We need <em>cookies</em> for this site to function.</p>
+		<label class="accept-button" for="cookie-toggle">Accept</label>
+	</aside>
 </body>
 </html>
